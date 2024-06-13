@@ -16,3 +16,9 @@ class MetronomeNetworkingController:
         ]
         response = metronome_client.session.post(url, json=payload)
         return response
+    
+    @staticmethod
+    def ingest_multiple_events(events):
+        url = "https://api.metronome.com/v1/ingest"
+        response = metronome_client.session.post(url, json=events)
+        return response
