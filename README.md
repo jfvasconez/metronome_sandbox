@@ -35,7 +35,7 @@ cp example.env .env
 ## Usage
 The `metronome_scripts.py` script provides various functions for testing and generating events in the Metronome system. 
 
-Here are the available commands that you can type into your console:
+Here are the available commands that you can type into your console from the root folder:
 
 - Generate a sample heartbeat event:
 ```bash
