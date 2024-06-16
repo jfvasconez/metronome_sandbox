@@ -27,17 +27,16 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-4. Create a .env file in the project root by copying the example.env file:
+4. Create a .env file in the project root by copying the example.env file. Update the .env file with your specific configuration values.
 ```bash
 cp example.env .env
 ```
-Update the .env file with your specific configuration values.
-
-Usage
-The metronome_scripts.py script provides various functions for testing and generating events in the Metronome system. Here are the available commands:
+    
+## Usage
+The `metronome_scripts.py` script provides various functions for testing and generating events in the Metronome system. Here are the available commands:
 
 Generate a heartbeat event:
-Copypython scripts/metronome_scripts.py test_heartbeat_event
+```python scripts/metronome_scripts.py test_heartbeat_event```
 
 Generate an API call event:
 Copypython scripts/metronome_scripts.py test_api_call_event
