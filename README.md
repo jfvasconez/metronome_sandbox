@@ -1,40 +1,36 @@
 # Metronome Sandbox
-
 Metronome Sandbox is a Python project designed to interact with the Metronome API for testing and generating events. This project provides scripts to send various types of events to Metronome and includes utilities for generating random event data.
 
-## Getting Started
-
-### Prerequisites
-
+## Prerequisites
 Ensure you have Python 3.11.8 installed on your system. You can check your Python version with the following command:
 
 ```bash
 python --version
 ```
 
-
-
-# Metronome Sandbox
-Metronome Sandbox is a Python project designed to interact with the Metronome API for testing and generating events. This project provides scripts to send various types of events to Metronome and includes utilities for generating random event data.
-
-## Prerequisites
-Python 3.11.8
-
 ## Installation
 
-Clone the repository:
-```git clone https://github.com/your-username/metronome-sandbox.git```
-```cd metronome-sandbox```
+1. Clone the repository:
+```bash
+git clone https://github.com/your-username/metronome-sandbox.git
+cd metronome-sandbox
+```
 
-Create a virtual environment (optional but recommended):
-Copypython -m venv venv
+2. Create a virtual environment (optional but recommended):
+```bash
+python -m venv venv
 source venv/bin/activate
+```
 
-Install the required dependencies:
-Copypip install -r requirements.txt
+3. Install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-Create a .env file in the project root by copying the example.env file:
-Copycp example.env .env
+4. Create a .env file in the project root by copying the example.env file:
+```bash
+cp example.env .env
+```
 Update the .env file with your specific configuration values.
 
 Usage
