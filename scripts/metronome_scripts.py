@@ -10,7 +10,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from api.networking.metronome_networking_controller import MetronomeNetworkingController
 from api.logic_handlers.metronome_logic_handler import MetronomeLogicHandler
-from api.utils.event_utils import (generate_uuid, 
+from api.utils.random_event_utils import (generate_uuid, 
                                    generate_random_timestamp, 
                                    generate_random_tokens, 
                                    generate_random_region, 

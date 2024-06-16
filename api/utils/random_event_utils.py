@@ -1,4 +1,4 @@
-# scripts/event_utils.py
+# scripts/random_event_utils.py
 import random
 import uuid
 from datetime import datetime
