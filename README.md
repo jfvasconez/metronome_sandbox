@@ -12,7 +12,7 @@ python --version
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/metronome-sandbox.git
+git clone https://github.com/jfvasconez/metronome_sandbox.git
 cd metronome-sandbox
 ```
 
