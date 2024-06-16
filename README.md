@@ -57,9 +57,18 @@ python scripts/metronome_scripts.py generate_multiple_random_events
 python scripts/metronome_scripts.py test_multiple_events
 ```
 
+## Ensuring Events Are Billable
+1. Remember to [create customers](https://docs.metronome.com/provisioning/create-customers/) in Metronome that match the ID/alias being used in your events.
+2. Remember to [create billable metrics](https://docs.metronome.com/invoicing/how-billing-works/set-up-billable-metrics/) in Metronome that match the event payloads you're sending.
+
 ## File Structure
 
 - `scripts/metronome_scripts.py`: The main script file containing various functions for testing and generating events.
 - `api/networking/metronome_networking_controller.py`: The networking controller module for handling network-related operations.
 - `api/logic_handlers/metronome_logic_handler.py`: The logic handler module for processing and sending events.
 - `api/utils/event_utils.py`: Utility functions for generating random event data.
+
+## Related Links
+1. [Metronome API Reference](https://docs.metronome.com/api/)
+2. [Metronome API Documentation](https://docs.metronome.com/)
+3. [Metronome Events Explorer](https://app.metronome.com/sandbox/developer/events)
