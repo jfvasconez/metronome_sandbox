@@ -26,7 +26,7 @@ from api.utils.event_utils import (generate_uuid,
 def test_heartbeat_event():
     try:
         transaction_id = "2024-06-12T00:00:00Z_cluster42"
-        customer_id = "juan@juan.com"
+        customer_id = "test_user@test.com"
         event_type = "heartbeat"
         timestamp = "2024-06-12T00:00:00Z"
         properties = {
@@ -42,7 +42,7 @@ def test_heartbeat_event():
 def test_api_call_event():
     try:
         transaction_id = "6-15_test_2"
-        customer_id = "juan@juan.com"
+        customer_id = "test_user@test.com"
         event_type = "api_call"
         timestamp = "2024-06-15T01:00:00Z"
         properties = {
@@ -88,7 +88,7 @@ def generate_multiple_random_events():
             
             event = {
                 "transaction_id": generate_uuid(),
-                "customer_id": "juan@juan.com",
+                "customer_id": "test_user@test.com",
                 "event_type": event_type,
                 "timestamp": generate_random_timestamp(start_date, end_date),
                 "properties": properties
@@ -105,7 +105,7 @@ def test_multiple_events():
         events = [
             {
                 "transaction_id": "multiple_events_heartbeat_2",
-                "customer_id": "juan@juan.com",
+                "customer_id": "test_user@test.com",
                 "event_type": "heartbeat",
                 "timestamp": "2024-06-12T02:00:00Z",
                 "properties": {
@@ -116,7 +116,7 @@ def test_multiple_events():
             },
             {
                 "transaction_id": "multiple_events_api_call_2",
-                "customer_id": "juan@juan.com",
+                "customer_id": "test_user@test.com",
                 "event_type": "api_call",
                 "timestamp": "2024-06-12T03:01:00Z",
                 "properties": {

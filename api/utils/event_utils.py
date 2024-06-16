@@ -1,7 +1,7 @@
 # scripts/event_utils.py
 import random
 import uuid
-from datetime import datetime, timedelta
+from datetime import datetime
 
 # Generate a random UUID
 def generate_uuid():
