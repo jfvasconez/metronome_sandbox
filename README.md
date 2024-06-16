@@ -35,29 +35,29 @@ cp example.env .env
 ## Usage
 The `metronome_scripts.py` script provides various functions for testing and generating events in the Metronome system. Here are the available commands:
 
-Generate a heartbeat event:
-```python scripts/metronome_scripts.py test_heartbeat_event```
+- Generate a sample heartbeat event:
+```bash
+python scripts/metronome_scripts.py test_heartbeat_event
+```
 
-Generate an API call event:
-Copypython scripts/metronome_scripts.py test_api_call_event
+- Generate a sample API call event:
+```bash
+python scripts/metronome_scripts.py test_api_call_event
+```
 
-Generate multiple random events:
-Copypython scripts/metronome_scripts.py generate_multiple_random_events
+- Generate multiple random events:
+```bash
+python scripts/metronome_scripts.py generate_multiple_random_events
+```
 
-Test multiple events:
-Copypython scripts/metronome_scripts.py test_multiple_events
+- Test multiple sample events:
+```bash
+python scripts/metronome_scripts.py test_multiple_events
+```
 
+## File Structure
 
-File Structure
-
-scripts/metronome_scripts.py: The main script file containing various functions for testing and generating events.
-api/networking/metronome_networking_controller.py: The networking controller module for handling network-related operations.
-api/logic_handlers/metronome_logic_handler.py: The logic handler module for processing and sending events.
-api/utils/event_utils.py: Utility functions for generating random event data.
-
-Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
-License
-This project is licensed under the MIT License.
-
-Feel free to customize and expand upon this README file based on your specific project requirements and best practices.
+- `scripts/metronome_scripts.py`: The main script file containing various functions for testing and generating events.
+- `api/networking/metronome_networking_controller.py`: The networking controller module for handling network-related operations.
+- `api/logic_handlers/metronome_logic_handler.py`: The logic handler module for processing and sending events.
+- `api/utils/event_utils.py`: Utility functions for generating random event data.
