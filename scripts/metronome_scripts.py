@@ -41,10 +41,10 @@ def test_heartbeat_event():
 # python scripts/metronome_scripts.py test_api_call_event
 def test_api_call_event():
     try:
-        transaction_id = "2024-06-12T01:00:00Z_cluster42"
+        transaction_id = "6-15_test_2"
         customer_id = "juan@juan.com"
         event_type = "api_call"
-        timestamp = "2024-06-12T01:00:00Z"
+        timestamp = "2024-06-15T01:00:00Z"
         properties = {
             "model_name": "gpt-3.5-turbo-0125",
             "model_type": "text_generation",
@@ -61,11 +61,11 @@ def test_api_call_event():
 # python scripts/metronome_scripts.py generate_multiple_random_events
 def generate_multiple_random_events():
     try:
-        start_date = datetime(2024, 6, 7)
-        end_date = datetime(2024, 6, 13)
+        start_date = datetime(2024, 6, 10)
+        end_date = datetime(2024, 6, 11)
 
         events = []
-        for _ in range(1):  # Adjust the range for the number of events you want to generate
+        for _ in range(3):  # Adjust the range for the number of events you want to generate
             event_type = random.choice(["heartbeat", "api_call"])
             properties = {}
             
