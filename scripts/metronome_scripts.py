@@ -25,10 +25,10 @@ from api.utils.random_event_utils import (generate_uuid,
 # python scripts/metronome_scripts.py test_heartbeat_event
 def test_heartbeat_event():
     try:
-        transaction_id = "2024-06-12T00:00:00Z_cluster42"
+        transaction_id = "6-16_test_2"
         customer_id = "test_user@test.com"
         event_type = "heartbeat"
-        timestamp = "2024-06-12T00:00:00Z"
+        timestamp = "2024-06-16T00:00:00Z"
         properties = {
             "cluster_id": "42",
             "cpu_seconds": 60,
