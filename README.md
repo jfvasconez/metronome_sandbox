@@ -19,8 +19,8 @@ cd metronome-sandbox
 2. Create a virtual environment (optional but recommended):
 ```bash
 python -m venv venv
-source venv/bin/activate
 ```
+Activate it with `source venv/bin/activate`
 
 3. Install the required dependencies:
 ```bash
