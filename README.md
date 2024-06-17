@@ -20,7 +20,7 @@ cd metronome-sandbox
 ```bash
 python -m venv venv
 ```
-Activate it with `source venv/bin/activate`
+- Activate it with `source venv/bin/activate`
 
 3. Install the required dependencies:
 ```bash
